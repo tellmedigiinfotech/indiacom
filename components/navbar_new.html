@@ -1,0 +1,59 @@
+<header class="absolute top-0 left-0 w-full z-50 text-white font-bold bg-transparent">
+  <div class="container mx-auto flex items-center justify-between px-4 sm:px-16 py-4">
+    <!-- Logo -->
+    <div>
+      <a href="/">
+        <img src="/assets/indiacom logo white.png" alt="Indiacom Logo" class="h-10 w-auto" />
+        <p class="text-xs text-gray-300 text-center">Since 1988</p>
+      </a>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="menuToggle" class="sm:hidden text-white text-2xl focus:outline-none" aria-expanded="false"
+      aria-controls="mobileMenuNew" type="button">
+      ☰
+    </button>
+
+    <!-- Nav -->
+    <!-- Nav (desktop + mobile) -->
+    <!-- Desktop nav (visible >= sm) -->
+    <nav class="hidden sm:flex items-center space-x-6">
+      <a href="/" class="hover:underline">Home</a>
+      <a href="/about.html" class="hover:underline">About Us</a>
+      <a href="/career-us.html" class="hover:underline">Career With Us</a>
+      <a href="/contact.html" class="hover:underline">Contact Us</a>
+    </nav>
+
+    <!-- Mobile menu button already present -->
+
+    <!-- Mobile panel (visible < sm) -->
+    <nav id="mobileMenuNew" class="sm:hidden fixed inset-x-0 top-16 bg-black/70 backdrop-blur-md p-4 hidden"
+      style="z-index: 100;">
+      <div class="flex flex-col space-y-2">
+        <a href="/" class="block w-full">Home</a>
+        <a href="/about.html" class="block w-full">About</a>
+        <a href="/career-us.html" class="block w-full">Career Us</a>
+        <a href="/contact.html" class="block w-full">Contact Us</a>
+      </div>
+    </nav>
+  </div>
+  
+  <!-- Toggle Script -->
+  <script type="text/javascript">
+    const btn = document.getElementById('menuToggle');
+    const panel = document.getElementById('mobileMenuNew');
+    if (!btn || !panel) return;
+
+    const isDesktop = () => window.matchMedia('(min-width:640px)').matches;
+
+    btn.addEventListener('click', () => {
+      // console.log('button at least clicked')
+      if (isDesktop()) return;panel.classList.toggle('hidden');btn.setAttribute('aria-expanded', String(!panel.classList.contains('hidden')));
+    });
+
+    panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      if (!isDesktop()) panel.classList.add('hidden');
+    }));
+  </script>
+
+</header>

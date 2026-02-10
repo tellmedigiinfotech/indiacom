@@ -1,0 +1,93 @@
+
+
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&family=Roboto+Slab:wght@700&display=swap');
+
+/* Base Body Font */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+}
+
+/* Heading Fonts */
+h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Header and Footer Styles */
+header, footer {
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navbar Branding */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Container */
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  background: #ebe8db;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Form Fields */
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit Button */
+.contact-form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Submit Button Hover */
+.contact-form button:hover {
+  background-color: #555;
+}
+

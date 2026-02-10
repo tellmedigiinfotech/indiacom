@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connect With Us - Indiacom</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/include.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRCDCRBLTV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SRCDCRBLTV');
+</script>
+
+  <style>
+    .gradient-text{
+      background:linear-gradient(90deg,#2563eb,#4f46e5);
+      -webkit-background-clip:text;background-clip:text;color:transparent
+    }
+    .glass{background:rgba(255,255,255,.85);backdrop-filter:blur(8px)}
+    .spin{animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</head>
+
+<body class="min-h-screen bg-white text-gray-900">
+  <!-- keep includes -->
+  <div data-include="components/navbar_new.html"></div>
+
+  <div class="max-w-2xl mx-auto px-4 pb-14 pt-30">
+    <div class="text-center mt-10 mb-10">
+      <h1 class="text-4xl font-bold gradient-text mb-3">Connect With Us</h1>
+      <p class="text-gray-600">
+        Ready to transform your business? Share a few details and we’ll reach out for a personalized consultation.
+      </p>
+    </div>
+
+    <section class="glass rounded-2xl shadow-xl border border-black/5">
+      <div class="px-6 sm:px-8 pt-8 text-center">
+        <h2 class="text-2xl font-semibold">Get Started Today</h2>
+        <p class="text-gray-600 mt-1 mb-6">Tell us about your project and we’ll get back within 24 hours.</p>
+      </div>
+
+      <!-- success alert -->
+      <div id="successAlert" class="hidden mx-6 sm:mx-8">
+        <div class="flex items-start gap-3 rounded-xl border border-green-200 bg-green-50 p-4 mb-4">
+          <svg class="w-5 h-5 text-green-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <p class="text-sm text-green-800">
+            Thank you! Your message has been sent successfully. We’ll be in touch soon.
+          </p>
+        </div>
+      </div>
+
+      <!-- FORM (uses working Google Forms entry IDs) -->
+      <form id="demoForm" class="px-6 sm:px-8 pb-8 space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- Full Name -->
+          <div>
+            <label for="name" class="block text-sm font-medium mb-1">Full Name</label>
+            <input id="name" name="entry.279943064" type="text" required placeholder="Enter your full name"
+              class="w-full h-11 rounded-xl border border-gray-200 bg-white px-3 outline-none
+                     focus:ring-4 focus:ring-blue-200/60 focus:border-blue-500 transition"/>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+            <input id="email" name="entry.51426910" type="email" required placeholder="your@email.com"
+              class="w-full h-11 rounded-xl border border-gray-200 bg-white px-3 outline-none
+                     focus:ring-4 focus:ring-blue-200/60 focus:border-blue-500 transition"/>
+            <p id="emailError" class="hidden text-sm text-red-600 mt-1">Please enter a valid email address.</p>
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block text-sm font-medium mb-1">Phone Number</label>
+            <input id="phone" name="entry.2032779251" type="tel" inputmode="numeric" maxlength="10" required placeholder="10-digit number"
+              class="w-full h-11 rounded-xl border border-gray-200 bg-white px-3 outline-none
+                     focus:ring-4 focus:ring-blue-200/60 focus:border-blue-500 transition"/>
+            <p id="phoneError" class="hidden text-sm text-red-600 mt-1">Please enter a valid 10-digit phone number.</p>
+          </div>
+
+          <!-- Business -->
+          <div>
+            <label for="business" class="block text-sm font-medium mb-1">Business Name</label>
+            <input id="business" name="entry.13639400" type="text" required placeholder="Your company name"
+              class="w-full h-11 rounded-xl border border-gray-200 bg-white px-3 outline-none
+                     focus:ring-4 focus:ring-blue-200/60 focus:border-blue-500 transition"/>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1">Tell us about your project</label>
+          <textarea id="message" name="entry.2110987237" rows="4" required
+            placeholder="What can we help you with? Share your goals, challenges, or any specific requirements..."
+            class="w-full rounded-xl border border-gray-200 bg-white px-3 py-2 outline-none
+                   focus:ring-4 focus:ring-blue-200/60 focus:border-blue-500 transition resize-y"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="pt-1">
+          <button id="submitBtn" type="submit"
+            class="w-full h-12 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold
+                   shadow-lg shadow-blue-600/20 hover:from-blue-700 hover:to-indigo-700
+                   disabled:opacity-60 disabled:cursor-not-allowed transition flex items-center justify-center gap-2">
+            <span id="submitText">Send Message</span>
+            <svg id="submitSpinner" class="hidden w-5 h-5 spin" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity="0.25" stroke-width="4"/>
+              <path d="M22 12a10 10 0 00-10-10" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Contact info -->
+        <div class="text-center border-t border-gray-200 pt-6">
+          <p class="text-sm text-gray-600">
+            Prefer to reach out directly?
+            <a href="mailto:sales@indiacom.com" class="text-blue-600 hover:underline">sales@indiacom.com</a>
+            &middot;
+            <a href="tel:+918275082751" class="text-blue-600 hover:underline">+91-82750-82751</a>
+          </p>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <!-- keep footer include -->
+  <div data-include="components/footer.html" class="mt-auto"></div>
+
+  <script>
+    const form = document.getElementById('demoForm');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('phone');
+    const emailError = document.getElementById('emailError');
+    const phoneError = document.getElementById('phoneError');
+    const successAlert = document.getElementById('successAlert');
+    const submitBtn = document.getElementById('submitBtn');
+    const submitText = document.getElementById('submitText');
+    const submitSpinner = document.getElementById('submitSpinner');
+
+    // Only allow digits in phone
+    phoneInput.addEventListener('input', () => {
+      phoneInput.value = phoneInput.value.replace(/\D/g,'').slice(0,10);
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // reset errors
+      emailError.classList.add('hidden');
+      phoneError.classList.add('hidden');
+
+      let isValid = true;
+
+      // validations
+      const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+      if (!emailPattern.test(emailInput.value.trim())) {
+        emailError.classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!/^\d{10}$/.test(phoneInput.value.trim())) {
+        phoneError.classList.remove('hidden');
+        isValid = false;
+      }
+
+      if (!isValid) return;
+
+      // loading state
+      submitBtn.disabled = true;
+      submitText.classList.add('hidden');
+      submitSpinner.classList.remove('hidden');
+
+      try {
+        const formData = new FormData(form);
+
+        // Use the working Google Form endpoint that matches the entry.* IDs above
+        await fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSe3TsAW6hqV76-hcRpoMs2BVKSxQ2PXzDqORgOWwoKS3NliUw/formResponse', {
+          method: 'POST',
+          mode: 'no-cors',
+          body: formData
+        });
+
+        successAlert.classList.remove('hidden');
+        form.reset();
+        successAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => successAlert.classList.add('hidden'), 5000);
+      } catch (err) {
+        alert('Something went wrong while sending your message. Please try again.');
+      } finally {
+        submitBtn.disabled = false;
+        submitText.classList.remove('hidden');
+        submitSpinner.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>

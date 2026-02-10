@@ -1,0 +1,36 @@
+<header class="bg-gray-800 text-white font-bold">
+  <div class="container mx-auto flex items-center justify-between px-4 sm:px-16 py-5">
+    
+    <!-- Logo -->
+    <div>
+      <a href="/">
+        <img src="/assets/indiacom logo white.png" alt="Indiacom Logo" class="h-10 w-auto" />
+        <p class="text-xs text-gray-400 text-center">Since 1988</p>
+      </a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button id="menuToggle" class="sm:hidden text-white text-2xl focus:outline-none">
+      ☰
+    </button>
+
+    <!-- Navigation Links -->
+    <nav id="mobileMenuNew"
+      class="hidden sm:flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 absolute sm:static top-16 left-0 w-full sm:w-auto bg-gray-800 sm:bg-transparent p-4 sm:p-0 z-50">
+      <a href="/" class="hover:underline block w-full sm:w-auto">Home</a>
+      <a href="/about.html" class="hover:underline block w-full sm:w-auto">About</a>
+      <a href="/career-us.html" class="hover:underline block w-full sm:w-auto">Career With Us</a>
+      <a href="/contact.html" class="hover:underline block w-full sm:w-auto">Contact Us</a>
+    </nav>
+  </div>
+
+  <!-- Toggle Script -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenuNew');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</header>

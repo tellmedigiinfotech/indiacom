@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiacom - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRCDCRBLTV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SRCDCRBLTV');
+</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#0f172b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-white">
+    <div data-include="components/navbar.html"></div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold text-[#0f172b] mb-6 bg-gradient-to-r from-[#0f172b] to-slate-600 bg-clip-text text-transparent">
+                Get In Touch
+            </h1>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                We'd love to hear from you. Send us a message with your requirements 
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+            <div class="lg:col-span-1">
+                <div class="h-full shadow-2xl border-0 bg-[#0f172b] text-white relative overflow-hidden rounded-lg p-6">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-slate-500/10 rounded-full blur-xl"></div>
+                    <div class="relative mb-8">
+                        <h2 class="text-2xl text-white mb-3">Contact Information</h2>
+                        <p class="text-slate-300">Reach out to us anytime</p>
+                    </div>
+
+                    <div class="space-y-8 relative">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-500/20 p-3 rounded-xl flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-blue-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Pune Office</h4>
+                                <p class="text-slate-300 leading-relaxed">
+                                    Akshay Complex,<br>
+                                    Unit No.226, Second floor,<br>
+                                    Dhole Patil Rd,<br>
+                                    Pune, Maharashtra 411001
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-500/20 p-3 rounded-xl flex-shrink-0">
+                                <i class="fas fa-phone text-blue-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Phone</h4>
+                                <div class="text-slate-300 space-y-1">
+                                    <div>
+                                        <a href="tel:7261981615" class="hover:text-blue-400 transition-colors duration-200">
+                                            +91-7261981615
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="tel:8275082751" class="hover:text-blue-400 transition-colors duration-200">
+                                            +91-8275082751
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-500/20 p-3 rounded-xl flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-400 text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-2">Email</h4>
+                                <a href="mailto:sales@indiacom.com" 
+                                   class="text-slate-300 hover:text-blue-400 transition-colors duration-200">
+                                    sales@indiacom.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <div class="shadow-xl border border-slate-200 bg-white rounded-lg">
+                    <div class="text-center pb-8 bg-gradient-to-r from-slate-50 to-slate-100 rounded-t-lg p-6">
+                        <h2 class="text-3xl text-[#0f172b] mb-3">Send us a Message</h2>
+                        <p class="text-slate-600">Fill out the form below and we'll get back to you shortly</p>
+                    </div>
+
+                    <div class="p-8">
+                        <div id="successMessage" class="hidden mb-6 p-4 bg-green-50 border border-green-200 rounded-xl">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                        <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-green-800 font-medium">
+                                        Thank you for contacting us! Our team will get back to you soon.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-[#0f172b] font-medium mb-2">
+                                        Name *
+                                    </label>
+                                    <input type="text" id="name" name="name" required
+                                           class="w-full border border-slate-300 rounded-md px-3 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0f172b] focus:border-[#0f172b] transition-all duration-200"
+                                           placeholder="Your full name">
+                                    <p id="nameError" class="text-red-600 text-sm mt-1 hidden">Name is required</p>
+                                </div>
+
+                                <div>
+                                    <label for="business" class="block text-[#0f172b] font-medium mb-2">
+                                        Business Name
+                                    </label>
+                                    <input type="text" id="business" name="business"
+                                           class="w-full border border-slate-300 rounded-md px-3 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0f172b] focus:border-[#0f172b] transition-all duration-200"
+                                           placeholder="Your business name">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-[#0f172b] font-medium mb-2">
+                                        Email *
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                           class="w-full border border-slate-300 rounded-md px-3 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0f172b] focus:border-[#0f172b] transition-all duration-200"
+                                           placeholder="your.email@example.com">
+                                    <p id="emailError" class="text-red-600 text-sm mt-1 hidden">Please enter a valid email address</p>
+                                </div>
+
+                                <div>
+                                    <label for="phone" class="block text-[#0f172b] font-medium mb-2">
+                                        Phone Number *
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" required
+                                           class="w-full border border-slate-300 rounded-md px-3 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0f172b] focus:border-[#0f172b] transition-all duration-200"
+                                           placeholder="Your phone number">
+                                    <p id="phoneError" class="text-red-600 text-sm mt-1 hidden">Please enter a valid 10-digit phone number</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-[#0f172b] font-medium mb-2">
+                                    Message
+                                </label>
+                                <textarea id="message" name="message" required rows="5"
+                                          class="w-full border border-slate-300 rounded-md px-3 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#0f172b] focus:border-[#0f172b] transition-all duration-200 resize-none"
+                                          placeholder="Tell us about your project or inquiry..."></textarea>
+                                <p id="messageError" class="text-red-600 text-sm mt-1 hidden">Message is required</p>
+                            </div>
+
+                            <div class="text-center pt-4">
+                                <button type="submit" id="submitBtn"
+                                        class="bg-[#0f172b] hover:bg-slate-800 text-white px-8 py-4 rounded-xl transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none min-w-[200px] shadow-lg">
+                                    <span id="submitText" class="flex items-center justify-center space-x-2">
+                                        <i class="fas fa-paper-plane"></i>
+                                        <span>Send Message</span>
+                                    </span>
+                                    <span id="loadingText" class="hidden flex items-center justify-center space-x-2">
+                                        <div class="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                        <span>Sending...</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-[#0f172b]/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/3 rounded-full blur-3xl"></div>
+        </div>
+        
+    </main>
+    <div data-include="components/footer.html" class="mt-auto"></div>
+
+    <script>
+        class ContactForm {
+            constructor() {
+                this.form = document.getElementById('contactForm');
+                this.submitBtn = document.getElementById('submitBtn');
+                this.submitText = document.getElementById('submitText');
+                this.loadingText = document.getElementById('loadingText');
+                this.successMsg = document.getElementById('successMessage');
+                
+                // Form inputs
+                this.nameInput = document.getElementById('name');
+                this.businessInput = document.getElementById('business');
+                this.emailInput = document.getElementById('email');
+                this.phoneInput = document.getElementById('phone');
+                this.messageInput = document.getElementById('message');
+                
+                // Error elements
+                this.nameError = document.getElementById('nameError');
+                this.emailError = document.getElementById('emailError');
+                this.phoneError = document.getElementById('phoneError');
+                this.messageError = document.getElementById('messageError');
+                
+                this.initEventListeners();
+            }
+            
+            initEventListeners() {
+                // Form submission
+                this.form.addEventListener('submit', (e) => this.handleSubmit(e));
+                
+                // Clear errors when user types
+                this.nameInput.addEventListener('input', () => this.clearError('name'));
+                this.emailInput.addEventListener('input', () => this.clearError('email'));
+                this.phoneInput.addEventListener('input', () => this.clearError('phone'));
+                this.messageInput.addEventListener('input', () => this.clearError('message'));
+            }
+            
+            clearError(fieldName) {
+                const errorElement = document.getElementById(fieldName + 'Error');
+                if (errorElement) {
+                    errorElement.classList.add('hidden');
+                }
+            }
+            
+            validateForm() {
+                let isValid = true;
+                
+                // Hide all errors first
+                this.nameError.classList.add('hidden');
+                this.emailError.classList.add('hidden');
+                this.phoneError.classList.add('hidden');
+                this.messageError.classList.add('hidden');
+                
+                // Validate name
+                if (!this.nameInput.value.trim()) {
+                    this.nameError.classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate email
+                const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+                if (!this.emailInput.value.trim()) {
+                    this.emailError.textContent = 'Email is required';
+                    this.emailError.classList.remove('hidden');
+                    isValid = false;
+                } else if (!emailPattern.test(this.emailInput.value.trim())) {
+                    this.emailError.textContent = 'Please enter a valid email address';
+                    this.emailError.classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate phone
+                const phonePattern = /^[0-9]{10}$/;
+                if (!this.phoneInput.value.trim()) {
+                    this.phoneError.textContent = 'Phone number is required';
+                    this.phoneError.classList.remove('hidden');
+                    isValid = false;
+                } else if (!phonePattern.test(this.phoneInput.value.replace(/\D/g, ''))) {
+                    this.phoneError.textContent = 'Please enter a valid 10-digit phone number';
+                    this.phoneError.classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                // Validate message
+                if (!this.messageInput.value.trim()) {
+                    this.messageError.classList.remove('hidden');
+                    isValid = false;
+                }
+                
+                return isValid;
+            }
+            
+            showLoading(show) {
+                this.submitBtn.disabled = show;
+                if (show) {
+                    this.submitText.classList.add('hidden');
+                    this.loadingText.classList.remove('hidden');
+                } else {
+                    this.submitText.classList.remove('hidden');
+                    this.loadingText.classList.add('hidden');
+                }
+            }
+            
+            showSuccess() {
+                this.successMsg.classList.remove('hidden');
+                this.form.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    this.successMsg.classList.add('hidden');
+                }, 5000);
+            }
+            
+            async handleSubmit(e) {
+                e.preventDefault();
+                
+                if (!this.validateForm()) return;
+                
+                this.showLoading(true);
+                
+                try {
+                    // Create form data for Google Forms
+                    const formData = new FormData();
+                    formData.append('entry.2119687819', this.nameInput.value);
+                    formData.append('entry.274414376', this.businessInput.value);
+                    formData.append('entry.578041450', this.emailInput.value);
+                    formData.append('entry.643931591', this.phoneInput.value);
+                    formData.append('entry.2080082361', this.messageInput.value);
+                    
+                    // Submit to Google Forms
+                    await fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSefjQq0Mh7D7263uWB1UIt6G_PN78Q70S0Opx4uvyATmLTm7Q/formResponse', {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        body: formData
+                    });
+                    
+                    this.showSuccess();
+                    
+                } catch (error) {
+                    console.error('Error submitting form:', error);
+                    alert('There was an error submitting the form. Please try again.');
+                } finally {
+                    this.showLoading(false);
+                }
+            }
+        }
+        
+        // Initialize the contact form when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new ContactForm();
+        });
+        
+        // Add smooth scrolling for better UX
+        document.documentElement.style.scrollBehavior = 'smooth';
+    </script>
+</body>
+</html>

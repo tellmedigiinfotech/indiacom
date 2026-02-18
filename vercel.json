@@ -1,0 +1,21 @@
+{
+  "routes": [
+    {
+      "src": "/404\\.html",
+      "status": 308,
+      "headers": {
+        "Location": "/"
+      }
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 308,
+      "headers": {
+        "Location": "/"
+      }
+    }
+  ]
+}
